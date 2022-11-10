@@ -18,7 +18,11 @@ public class S2_AddItemToCartStepDefinition {
 
     public S2_AddItemToCartStepDefinition(AppiumDriver driver)
     {
+        this._basePage = new BasePage(driver);
         this._homePage = new P2_HomePage(driver);
+        this._electronicPage = new P5_ElectronicsPage(driver);
+        this._detailsPage = new P6_ItemDetailsPage(driver);
+        this._cartPage = new P7_CartPage(driver);
     }
 
     @Given("user scroll down till required section")
