@@ -1,4 +1,5 @@
 Feature: User can swap till find item
+  @test
   Scenario: User can swipe home page till find item to buy
     Given user scroll down till required section
     And user click on the section

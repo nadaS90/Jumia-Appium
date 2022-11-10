@@ -1,4 +1,5 @@
 Feature: User add shipping address
+  @test
   Scenario: User can add shipping address to complete purchasing
     Given user navigates to cart
     When click on total amount
