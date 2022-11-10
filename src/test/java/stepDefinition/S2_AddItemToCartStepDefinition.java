@@ -1,26 +1,24 @@
 package stepDefinition;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.touch.offset.ElementOption;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import pages.*;
 
 public class S2_AddItemToCartStepDefinition {
 
     BasePage _basePage;
-    P1_HomePage _homePage;
-    P4_ElectronicsPage _electronicPage;
-    P5_ItemDetailsPage _detailsPage;
-    P6_CartPage _cartPage;
+    P2_HomePage _homePage;
+    P5_ElectronicsPage _electronicPage;
+    P6_ItemDetailsPage _detailsPage;
+    P7_CartPage _cartPage;
 
     public S2_AddItemToCartStepDefinition(AppiumDriver driver)
     {
-        this._homePage = new P1_HomePage(driver);
+        this._homePage = new P2_HomePage(driver);
     }
 
     @Given("user scroll down till required section")

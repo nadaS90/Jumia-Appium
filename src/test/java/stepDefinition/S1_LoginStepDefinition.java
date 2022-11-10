@@ -1,28 +1,27 @@
 package stepDefinition;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidTouchAction;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
-import pages.P1_HomePage;
-import pages.P2_AccountPage;
-import pages.P3_LoginPage;
+import pages.P2_HomePage;
+import pages.P3_AccountPage;
+import pages.P4_LoginPage;
 import utils.TestData;
 
 public class S1_LoginStepDefinition {
-    P1_HomePage _homePage;
-    P2_AccountPage _accountPage;
-    P3_LoginPage _loginPage;
+    P2_HomePage _homePage;
+    P3_AccountPage _accountPage;
+    P4_LoginPage _loginPage;
 
 
     public S1_LoginStepDefinition(AppiumDriver driver)
     {
-        this._homePage = new P1_HomePage(driver);
-        this._accountPage = new P2_AccountPage(driver);
-        this._loginPage = new P3_LoginPage(driver);
+        this._homePage = new P2_HomePage(driver);
+        this._accountPage = new P3_AccountPage(driver);
+        this._loginPage = new P4_LoginPage(driver);
     }
     @Given("user navigates to Account page")
     public void userNavigatesToAccountPage()
